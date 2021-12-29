@@ -1,6 +1,6 @@
 package mc.ys.lession1;
 
-public class Calendar {
+public class Calendar2021 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
