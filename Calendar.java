@@ -100,7 +100,7 @@ public class Calendar {
 				}
 	
 				//다음달 출력
-				for(int i =1;day<=43;i++)//day<=36은 혹시 탈출못할까봐
+				for(int i =1;day<=43;i++)//day<=43은 혹시 탈출못할까봐
 				{
 					if(day%7==1)//1은 월요일을 의미 월요일이면 진입해라
 					{
