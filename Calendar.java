@@ -27,22 +27,25 @@ public class Calendar {
 		{
 			int day =1;
 			day += (fromYear-1)*365;
-			for(int i=4;i<=fromYear;i+=4)
+			
+			//윤년
+			if(fromYear%400==0 || (fromYear%4==0 && fromYear%100!=0))//올해 윤년 확인
+			{
+				Month[2]=29;
+			}
+		        for(int i=4;i<fromYear;i+=4)//~이전년 합산
 			{
 			    if(i%400==0 || (i%4==0 && i%100!=0)) 
 			    {	    	
 			    	day++;//윤년확인 후 날짜 추가
 			    }
 			}
-			if(fromYear%400==0 || (fromYear%4==0 && fromYear%100!=0)) 
-			{
-				Month[2]=29;
-			}
-			for(int i =1; i<fromMonth;i++)
+			for(int i =1; i<fromMonth;i++)//올해 합산
 			{
 				//System.out.println(i);
 				day += Month[i];//월 추가
 			}
+			
 			
 			day %= 7;	
 			
