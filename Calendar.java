@@ -90,8 +90,7 @@ public class Calendar {
 			
 				//이번달 출력
 				for(int i=1;i<=Month[thisMonth];i++)
-				{
-					
+				{					
 					System.out.printf("%d\t",i);
 					if(day%7==0)
 					{
