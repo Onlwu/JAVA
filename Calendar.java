@@ -111,7 +111,6 @@ public class Calendar {
 				day=day%7;
 			}
 			day++;
-			//System.out.println(fromYear);
 		}	
 		
 		
